@@ -1,0 +1,396 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes moveCart {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body {
+    background-color: rgb(207, 200, 168);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: 20px; 
+}
+
+header > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgba(238, 230, 194, 0.804);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 2em; 
+  
+}
+
+h1, h2, h3, h4 {
+  color: rgb(32, 32, 32);
+}
+
+main {
+    padding: 20px;
+  }
+  
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(238, 230, 194, 0.804);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-weight: bold;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(32, 32, 32);
+}
+
+.navbar a:hover {
+  color: rgba(159, 153, 131, 0.896);
+}
+/* ---- */
+
+/* Product Page */
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  background-color: rgb(238, 230, 194, 0.604);
+  border: 1px solid rgb(207, 200, 168);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product h2 {
+  color: #333;
+}
+
+.product p {
+  color: #666;
+  margin-top: 2.5px;
+}
+
+.product span.price {
+  font-weight: bold;
+  color: #f76d57;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.product button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #2980b9;
+}
+
+/* --- */
+
+/* Contact Menu */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#warning {
+margin-top: 10px;
+font-size: 15px;
+}
+
+fieldset {
+  border: 0;
+  background-color:rgb(238, 230, 194, 0.804) ;
+  padding: 20px; 
+  border-radius: 10px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Checkbox Styling */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+  margin-top: 10px;
+}
+
+.checkbox-container input {
+  display: none;
+}
+
+.checkbox-container label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkbox-container label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(207, 200, 168);
+  background-color: #fff;
+}
+
+.checkbox-container input:checked + label:before {
+  background-color: #4caf50;
+  border-color: rgb(207, 200, 168);
+  color: #fff;
+}
+
+input, textarea {
+  padding: 10px;
+  box-sizing: border-box; 
+  margin-top: 5px;
+  border: 1px solid rgb(238, 230, 194, 0.604);
+  border-radius: 5px;
+}
+/* ---- */
+
+/* Buttons */
+.button-container {
+  display: flex;
+
+  gap: 5px; 
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.reset-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #d32f2f;
+}
+/* ---- */
+
+/* Facts Button */
+#show-fact {
+  background-color: #4CAF50;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#show-fact:hover {
+  background-color: #45a049;
+}
+
+#show-fact:focus {
+  outline: none;
+}
+
+/* Facts Text */
+#dragon-fact {
+  position: relative; /* Position relative for positioning the pseudo-element */
+  margin-top: 10px;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+
+#dragon-fact::before {
+  content: ''; /* Empty content */
+  position: absolute; /* Position absolute for the pseudo-element */
+  top: -1px; /* Position above the chat bubble */
+  left: 50%; /* Align to the center */
+  border-style: solid;
+  border-width: 10px 10px 0; /* Border width for the triangle */
+  border-color: #4CAF50 transparent transparent; /* Border color */
+  transform: translateX(-50%); /* Move the triangle to center */
+}
+
+
+
+article {
+  background-color: rgb(238, 230, 194, 0.604);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+#home {background-color: rgba(238, 230, 194, 0.604)}
+
+/* Paragraphs */
+.paragraph-container {
+  background-color: rgb(238, 230, 194, 0.604);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#paragraph {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#paragraph1 {
+  padding: 1rem;
+  text-align: center;
+}
+
+#paragraphcontact1 {
+  margin-top: 10px;
+  margin-bottom: 20px; 
+  text-align: center;
+  padding: 1rem;
+
+}
+
+#paragraphcontact2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+/* ---- */
+
+#fieldset1 {
+  margin-top: 20px;
+}
+
+/* Image Container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.founderImage{
+  height: auto;
+}
+
+.card h3 {
+  text-align: center;
+}
+/* ---- */
+
+article {
+  text-align: center;
+}
+
+article h3 {
+  margin: 0;
+}
+
+#p3 {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+#p4 {
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+#p5 {
+  margin-bottom: 20px; 
+}
+
+footer {
+  color: rgb(32, 32, 32);
+  background-color: rgba(238, 230, 194, 0.804);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px;
+  font-size: small;
+}
