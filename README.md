@@ -20,4 +20,4 @@ Occasionally, certain products may be out of stock due to high demand or supplie
 While we strive to provide accurate information, care guidelines may vary based on individual bearded dragon needs and preferences.
 
 Technical Requirments 
-Our website has been tested and confirmed to work on the following web browsers: **Google Chrome**, **Microsoft Edge** and **Opera Gx**. We highly recommend accessing it from said browsers for the best experience possible. 
+Our website has been tested and confirmed to work on the following web browsers: **Google Chrome**, **Microsoft Edge** and **Opera GX**. We highly recommend accessing it from said browsers for the best experience possible. 
