@@ -5,13 +5,10 @@ Introduction
 Bearded Dragon Haven is dedicated to providing resources, products, and a community for bearded dragon enthusiasts. Whether you're a seasoned reptile keeper or a newcomer to the world of herpetology, our website offers valuable insights and high-quality products to enhance the well-being of your bearded dragons.
 
 Installation Instructions
-Bearded Dragon Haven is a web-based platform accessible through any modern web browser.
-Usage
 Once on the website, you can navigate through various sections to access information about bearded dragon care. Additionally, browse our selection of accessories, tools, thermostats, and dietary supplements, to provide the best possible environment for your pet.
 
 Features
 High-quality accessories sourced from trusted suppliers
-Secure online shopping with easy checkout
 Dependencies and Facts
 HTML, CSS, JavaScript for website development
 
@@ -21,3 +18,6 @@ We welcome contributions from fellow reptile enthusiasts! If you'd like to contr
 Known Issues and Limitations
 Occasionally, certain products may be out of stock due to high demand or supplier availability.
 While we strive to provide accurate information, care guidelines may vary based on individual bearded dragon needs and preferences.
+
+Technical Requirments 
+Our website has been tested and confirmed to work on the following web browsers: **Google Chrome**, **Microsoft Edge** and **Opera Gx**. We highly recommend accessing it from said browsers for the best experience possible. 
